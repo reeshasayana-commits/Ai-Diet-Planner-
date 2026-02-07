@@ -1,0 +1,72 @@
+[
+    {
+        "Name": "sara",
+        "timestamp": "2025-11-13 10:32:26",
+        "query": "Diabetics ",
+        "weight": "40",
+        "height": "5",
+        "age": "50",
+        "gender": "male",
+        "activity": "light",
+        "diet_plan": "\nBreakfast:\n- 1 scrambled egg\n- 1 slice of whole grain toast\n- 1/2 cup of mixed berries\n\nLunch:\n- Grilled chicken breast\n- Quinoa salad with mixed vegetables\n- 1 small apple\n\nDinner:\n- Baked salmon\n- Steamed broccoli\n- Brown rice",
+        "breakfast": "- 1 scrambled egg\n- 1 slice of whole grain toast\n- 1/2 cup of mixed berries",
+        "lunch": "- Grilled chicken breast\n- Quinoa salad with mixed vegetables\n- 1 small apple",
+        "dinner": "- Baked salmon\n- Steamed broccoli\n- Brown rice"
+    },
+    {
+        "Name": "Soni",
+        "timestamp": "2025-12-23 19:41:01",
+        "query": "Jaundice ",
+        "weight": "55",
+        "height": "175",
+        "age": "55",
+        "gender": "male",
+        "activity": "light",
+        "diet_plan": "\nBreakfast:\n- Whole grain toast with avocado and poached egg\n- Green tea\n\nLunch:\n- Grilled chicken or fish\n- Quinoa or brown rice\n- Steamed vegetables (such as broccoli, carrots, and bell peppers)\n\nDinner:\n- Lentil soup with whole grain bread\n- Mixed green salad with olive oil and vinegar dressing",
+        "breakfast": "- Whole grain toast with avocado and poached egg\n- Green tea",
+        "lunch": "- Grilled chicken or fish\n- Quinoa or brown rice\n- Steamed vegetables (such as broccoli, carrots, and bell peppers)",
+        "dinner": "- Lentil soup with whole grain bread\n- Mixed green salad with olive oil and vinegar dressing"
+    },
+    {
+        "Name": "Soni",
+        "timestamp": "2025-12-24 11:47:04",
+        "query": "Diabetics ",
+        "weight": "55",
+        "height": "175",
+        "age": "55",
+        "gender": "male",
+        "activity": "light",
+        "diet_plan": "Breakfast: 1 cup oatmeal with berries\n\nLunch: Grilled chicken salad\n\nDinner: Baked salmon, veggies, brown rice",
+        "breakfast": "1 cup oatmeal with berries",
+        "lunch": "Grilled chicken salad",
+        "dinner": "Baked salmon, veggies, brown rice"
+    },
+    {
+        "Name": "Soni",
+        "timestamp": "2026-01-08 23:47:59",
+        "query": "Fever ",
+        "weight": "55",
+        "height": "175",
+        "age": "55",
+        "gender": "male",
+        "activity": "light",
+        "diet_plan": "Breakfast:\n- Herbal tea with honey\n- Oatmeal with sliced banana and almonds\n\nLunch:\n- Grilled chicken salad with mixed greens, cherry tomatoes, cucumber, and vinaigrette dressing\n- Whole grain bread\n\nDinner:\n- Baked salmon with steamed broccoli and quinoa",
+        "breakfast": "- Herbal tea with honey\n- Oatmeal with sliced banana and almonds",
+        "lunch": "- Grilled chicken salad with mixed greens, cherry tomatoes, cucumber, and vinaigrette dressing\n- Whole grain bread",
+        "dinner": "- Baked salmon with steamed broccoli and quinoa"
+    },
+    {
+        "Name": "Soni",
+        "timestamp": "2026-01-09 00:26:01",
+        "query": "Fever ",
+        "weight": "55",
+        "height": "175",
+        "age": "55",
+        "gender": "male",
+        "activity": "light",
+        "diet_plan": "\nBreakfast:\n- 1 cup of Greek yogurt\n- 1 small banana\n- 1 tablespoon of almond butter\n\nLunch:\n- Grilled chicken salad with mixed greens, cherry tomatoes, cucumbers, and a vinaigrette dressing\n- 1 whole grain roll\n\nDinner:\n- Baked salmon with steamed asparagus and quinoa",
+        "breakfast": "- 1 cup of Greek yogurt\n- 1 small banana\n- 1 tablespoon of almond butter",
+        "lunch": "- Grilled chicken salad with mixed greens, cherry tomatoes, cucumbers, and a vinaigrette dressing\n- 1 whole grain roll",
+        "dinner": "- Baked salmon with steamed asparagus and quinoa"
+    }
+]

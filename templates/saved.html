@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saved Diet Plans</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f6f7fb;
+      min-height: 100vh;
+      margin: 24px; padding: 12px;
+      display: flex; justify-content: center; align-items: flex-start;
+    }
+    .wrap { width: 100%; max-width: 980px; margin: auto; }
+
+    table { width: 150%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; }
+    th, td { padding: 12px; text-align: left; vertical-align: top; border-bottom: 1px solid #eee; }
+    thead th { background: #f3f6ff; color: #1a3d8f; }
+    tr:last-child td { border-bottom: 0; }
+
+    .inner-meals { width: 100%; border-collapse: collapse; }
+    .inner-meals th, .inner-meals td { border: 1px solid #eee; padding: 8px; }
+    .inner-meals th { background: #fafbff; width: 110px; color: #1a3d8f; }
+
+    .b {
+      background: #ff3b3b; color: #fff; border: none; padding: 8px 12px;
+      border-radius: 80px; cursor: pointer;
+    }
+    .b:hover { background: #d32f2f; }
+    .back {
+      display: inline-block; margin-top: 16px; text-decoration: none;
+      background: #e7ecff; color: #1a3d8f; padding: 10px 14px; border-radius: 8px;
+    }
+    .back:hover { background: #d7e1ff; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>📂 All Saved Diet Plans</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Date & Time</th>
+          <th>Disease</th>
+          <th>User Details</th>
+          <th>Diet plans</th>
+          <th>Downloads plans</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for plan in plans %}
+        <tr>
+          <td>{{ plan.timestamp }}</td>
+          <td>{{ plan.query }}</td>
+          <td>
+            <b>Name:</b> {{ plan.Name }}<br>
+            <b>Weight:</b> {{ plan.weight }} kg<br>
+            <b>Height:</b> {{ plan.height }} cm<br>
+            <b>Age:</b> {{ plan.age }}<br>
+            <b>Gender:</b> {{ plan.gender }}<br>
+            <b>Activity:</b> {{ plan.activity }}
+          </td>
+          <td>
+            <table class="inner-meals">
+              <tr>
+                <th>Breakfast</th>
+                <td>{{ plan.breakfast | safe }}</td>
+              </tr>
+              <tr>
+                <th>Lunch</th>
+                <td>{{ plan.lunch | safe }}</td>
+              </tr>
+              <tr>
+                <th>Dinner</th>
+                <td>{{ plan.dinner | safe }}</td>
+              </tr>
+            </table>
+          </td>
+          <td style="text-align:center;">
+            <a href="/download/{{ loop.index0 }}"><button class="b">Download PDF</button></a><br><br>
+            <a href="/delete/{{ loop.index0 }}" onclick="return confirm('Delete this plan?');">
+              <button class="b">Delete</button>
+            </a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <a href="/" class="back">⬅ Back to Form</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Diet Plan</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      background: url('static/images/image.png') no-repeat center center fixed; 
+      background-size: cover; 
+      padding: 10px; 
+      margin: 10px;
+    }
+    .container {
+      max-width: 1000px; 
+      margin: auto; 
+      background: rgba(128, 216, 232, 0.9); /* semi-transparent */
+      padding: 10px;
+      border-radius: 10px; 
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+    h2 { 
+      margin-top: 0; 
+      color: #222; 
+      text-align: center; 
+    }
+    .meal-table { 
+      width: 100%; 
+      border-collapse: collapse; 
+      margin-top: 16px; 
+    }
+    .meal-table th, .meal-table td { 
+      padding: 12px; 
+      border: 1px solid #e5e5e5; 
+      vertical-align: top; 
+    }
+    .meal-table th { 
+      background: #f3f6ff; 
+      color: #050505; 
+      text-align: left; 
+      width: 100px; 
+    }
+    .meal-table td { 
+      background: #fafbff; 
+    }
+    .badge { 
+      font-weight: 400; 
+    }
+    .note { 
+      margin-top: 50px; 
+      font-size: 12px; 
+      color: #666; 
+      text-align: center; 
+    }
+    .back { 
+      display: inline-block; 
+      margin-top: 10px; 
+      text-decoration: none; 
+      background: #e7ecff; 
+      color: #1a3d8f; 
+      padding: 10px 14px; 
+      border-radius: 8px; 
+    }
+    .back:hover { 
+      background: #d7e1ff; 
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Ai-Disease-Based-Diet-Plans</h2>
+
+    <table class="meal-table">
+      <tr>
+        <th><span class="badge">Breakfast</span></th>
+        <td>{{ meals.breakfast | safe }}</td>
+      </tr>
+      <tr>
+        <th><span class="badge">Lunch</span></th>
+        <td>{{ meals.lunch | safe }}</td>
+      </tr>
+      <tr>
+        <th><span class="badge">Dinner</span></th>
+        <td>{{ meals.dinner | safe }}</td>
+      </tr>
+    </table>
+
+    <p class="note">This plan is for informational purposes only, not medical advice.</p>
+    <a href="/" class="back">⬅ Back to Form</a>
+  </div>
+</body>
+</html>
